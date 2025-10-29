@@ -25,8 +25,8 @@ def fetchData(url, target_table, cursor):
 urls = [
     ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv", "infracciones_ambientales"],
     ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv", "turistas_recibidos"],
-    ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/ALOJATUR_ABIERTOS/data.csv", "alojamientos_abiertos"],
-    ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/VIVIENDA_LIBRE_PRECIO_M2/data.csv", "valor_m2_vivienda"]
+    ["https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv", "infracciones_acpmn"],
+    ["https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv", "visitantes_espacios_naturales"]
 ]
 
 

@@ -2,54 +2,108 @@ version: 2
 
 sources:
   - name: public
-    description: "Tablas fuente con datos en bruto del esquema público"
+    description: "Tablas fuente originales del portal ISTAC en el esquema público de PostgreSQL."
     tables:
       - name: infracciones_ambientales
-        description: "Datos sobre infracciones ambientales por región y año"
+        description: "Datos sobre infracciones ambientales por isla y año."
       - name: turistas_recibidos
-        description: "Número de turistas recibidos por región y año"
-      - name: alojamientos_abiertos
-        description: "Cantidad de alojamientos turísticos abiertos"
-      - name: valor_m2_vivienda
-        description: "Valor medio del metro cuadrado de vivienda por región y año"
+        description: "Datos sobre número de turistas recibidos por isla y periodo."
+      - name: visitantes_espacios_naturales
+        description: "Datos sobre visitantes a los espacios naturales protegidos de Canarias."
+      - name: infracciones_acpmn
+        description: "Datos sobre infracciones detectadas por la Administración de Costas (ACPMN)."
 
 models:
-  - name: stg_infracciones
-    description: "Modelo de staging para infracciones ambientales"
+  - name: stg_infracciones_ambientales
+    description: "Modelo de staging que limpia y normaliza los datos de infracciones ambientales por isla y año."
     columns:
-      - name: region_code
+      - name: island_code
+        description: "Código ISTAC de la isla (formato ES70x)."
         tests: [not_null]
       - name: year
+        description: "Año de referencia de la observación."
         tests: [not_null]
-      - name: value
+      - name: obs_value
+        description: "Número o tasa de infracciones registradas."
         tests: []
 
-  - name: stg_turistas
-    description: "Modelo de staging para turistas recibidos"
+  - name: stg_turistas_recibidos
+    description: "Modelo de staging que normaliza los datos de turistas recibidos por isla y periodo mensual."
     columns:
-      - name: region_code
+      - name: island_code
+        description: "Código ISTAC de la isla (formato ES70x)."
         tests: [not_null]
       - name: year
+        description: "Año del periodo de observación."
         tests: [not_null]
-      - name: value
+      - name: month
+        description: "Mes del periodo (1–12)."
+        tests: []
+      - name: obs_value
+        description: "Número de turistas o variación registrada según la medida."
         tests: []
 
-  - name: stg_alojamientos
-    description: "Modelo de staging para alojamientos abiertos"
+  - name: stg_visitantes_espacios_naturales
+    description: "Modelo de staging que limpia los datos de visitantes a espacios naturales protegidos."
     columns:
-      - name: region_code
+      - name: space_code
+        description: "Código ISTAC del espacio natural protegido."
         tests: [not_null]
       - name: year
+        description: "Año de referencia de la observación."
         tests: [not_null]
-      - name: value
+      - name: obs_value
+        description: "Número de visitantes al espacio natural."
         tests: []
 
-  - name: stg_vivienda
-    description: "Modelo de staging para valor medio del m2 de vivienda"
+  - name: stg_infracciones_acpmn
+    description: "Modelo de staging que normaliza los datos de infracciones marítimas (ACPMN) por año."
     columns:
       - name: region_code
+        description: "Código del territorio (ES70 = Canarias)."
         tests: [not_null]
       - name: year
+        description: "Año de referencia de la observación."
         tests: [not_null]
-      - name: value
+      - name: obs_value
+        description: "Número de infracciones registradas por la Administración de Costas."
         tests: []
+
+  - name: mart_turismo_vs_medioambiente
+    description: >
+      Modelo analítico principal que integra turismo, visitantes a espacios naturales
+      e infracciones ambientales y marítimas por isla y año. Permite estudiar el
+      impacto del turismo en el medioambiente canario.
+    columns:
+      - name: island_code
+        description: "Código ISTAC de la isla (dimensión geográfica principal)."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_isla')
+              field: island_code
+
+      - name: year
+        description: "Año de referencia del análisis."
+        tests: [not_null]
+
+      - name: turistas_totales
+        description: "Número total de turistas registrados por isla y año."
+
+      - name: visitantes_naturales
+        description: "Número total de visitantes a espacios naturales por isla y año."
+
+      - name: infracciones_ambientales
+        description: "Número total de infracciones ambientales por isla y año."
+
+      - name: infracciones_marinas
+        description: "Número total de infracciones marítimas registradas en Canarias."
+
+      - name: ratio_infracciones_turista
+        description: "Relación entre infracciones ambientales y turistas recibidos."
+
+      - name: ratio_visitantes_turista
+        description: "Relación entre visitantes de espacios naturales y turistas recibidos."
+
+      - name: ratio_infracciones_marinas_turista
+        description: "Relación entre infracciones marítimas y turistas (a nivel regional)."

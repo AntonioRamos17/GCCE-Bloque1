@@ -41,8 +41,8 @@ CREATE TABLE IF NOT EXISTS visitantes_espacios_naturales (
     medidas_code TEXT,
     espacio_natural_protegido TEXT,
     espacio_natural_protegido_code TEXT,
-    time_period INTEGER,
-    time_period_code INTEGER,
+    time_period TEXT,
+    time_period_code TEXT,
     obs_value NUMERIC,
     periodo_recogida TEXT,
     confidencialidad_observacion TEXT,
@@ -58,8 +58,8 @@ CREATE TABLE IF NOT EXISTS infracciones_acpmn (
     tipo_infraccion_code TEXT,
     territorio TEXT,
     territorio_code TEXT,
-    time_period INTEGER,
-    time_period_code INTEGER,
+    time_period TEXT,
+    time_period_code TEXT,
     medidas TEXT,
     medidas_code TEXT,
     obs_value NUMERIC,
@@ -87,7 +87,7 @@ GRANT SELECT ON ALL TABLES IN SCHEMA public TO airbyte;
 -- Hace que las futuras tablas creadas en "public" también sean legibles
 ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO airbyte;
 
-ALTER TABLE alojamientos_abiertos OWNER TO airbyte;
+ALTER TABLE visitantes_espacios_naturales OWNER TO airbyte;
 ALTER TABLE infracciones_ambientales OWNER TO airbyte;
 ALTER TABLE turistas_recibidos OWNER TO airbyte;
-ALTER TABLE valor_m2_vivienda OWNER TO airbyte;
+ALTER TABLE infracciones_acpmn OWNER TO airbyte;

@@ -31,6 +31,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   BI_project:
-    # Config indicated by + and applies to all files under models/staging/ in this case!!!!
+    +schema: public
     staging:
-      +materialized: view
+      +materialized: table
+    facts:
+      +materialized: table
+    marts:
+      +materialized: table

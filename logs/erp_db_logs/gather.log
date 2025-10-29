@@ -359,3 +359,75 @@ Traceback (most recent call last):
 requests.exceptions.ConnectionError: HTTPSConnectionPool(host='datos.canarias.es', port=443): Max retries exceeded with url: /api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x736790d18200>: Failed to resolve 'datos.canarias.es' ([Errno -3] Temporary failure in name resolution)"))
 [2025-10-29 06:10:34] ERROR during update execution.
 ------------------------------------------------------------
+[2025-10-29 18:11:07] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+Traceback (most recent call last):
+  File "/home/usuario/BI_infrastructure/scripts/gathering/./script.py", line 42, in <module>
+    fetchData(url, target_table, cur)
+  File "/home/usuario/BI_infrastructure/scripts/gathering/./script.py", line 19, in fetchData
+    cursor.copy_expert(f"COPY {target_table} FROM STDIN WITH CSV HEADER", f)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "01/2015"
+CONTEXT:  COPY visitantes_espacios_naturales, line 28, column time_period: "01/2015"
+
+[2025-10-29 18:11:15] ERROR during update execution.
+------------------------------------------------------------
+[2025-10-29 18:17:42] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+Traceback (most recent call last):
+  File "/home/usuario/BI_infrastructure/scripts/gathering/./script.py", line 42, in <module>
+    fetchData(url, target_table, cur)
+  File "/home/usuario/BI_infrastructure/scripts/gathering/./script.py", line 19, in fetchData
+    cursor.copy_expert(f"COPY {target_table} FROM STDIN WITH CSV HEADER", f)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "2015-M01"
+CONTEXT:  COPY visitantes_espacios_naturales, line 28, column time_period_code: "2015-M01"
+
+[2025-10-29 18:17:49] ERROR during update execution.
+------------------------------------------------------------
+[2025-10-29 18:19:10] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
+[2025-10-29 18:19:16] Update completed successfully.
+------------------------------------------------------------
+[2025-10-29 18:57:14] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
+[2025-10-29 18:57:21] Update completed successfully.
+------------------------------------------------------------
+[2025-10-29 19:22:34] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
+[2025-10-29 19:22:42] Update completed successfully.
+------------------------------------------------------------
