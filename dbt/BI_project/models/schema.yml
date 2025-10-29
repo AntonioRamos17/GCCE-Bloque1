@@ -1,0 +1,55 @@
+version: 2
+
+sources:
+  - name: public
+    description: "Tablas fuente con datos en bruto del esquema público"
+    tables:
+      - name: infracciones_ambientales
+        description: "Datos sobre infracciones ambientales por región y año"
+      - name: turistas_recibidos
+        description: "Número de turistas recibidos por región y año"
+      - name: alojamientos_abiertos
+        description: "Cantidad de alojamientos turísticos abiertos"
+      - name: valor_m2_vivienda
+        description: "Valor medio del metro cuadrado de vivienda por región y año"
+
+models:
+  - name: stg_infracciones
+    description: "Modelo de staging para infracciones ambientales"
+    columns:
+      - name: region_code
+        tests: [not_null]
+      - name: year
+        tests: [not_null]
+      - name: value
+        tests: []
+
+  - name: stg_turistas
+    description: "Modelo de staging para turistas recibidos"
+    columns:
+      - name: region_code
+        tests: [not_null]
+      - name: year
+        tests: [not_null]
+      - name: value
+        tests: []
+
+  - name: stg_alojamientos
+    description: "Modelo de staging para alojamientos abiertos"
+    columns:
+      - name: region_code
+        tests: [not_null]
+      - name: year
+        tests: [not_null]
+      - name: value
+        tests: []
+
+  - name: stg_vivienda
+    description: "Modelo de staging para valor medio del m2 de vivienda"
+    columns:
+      - name: region_code
+        tests: [not_null]
+      - name: year
+        tests: [not_null]
+      - name: value
+        tests: []

@@ -1,0 +1,62 @@
+
+services:
+  # ===================== BBDD ===================== 
+  postgres_erp:
+    image: postgres:latest
+    container_name: postgres_erp
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: erp_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - erp_db_data:/var/lib/postgresql/data
+      - ./scripts/init/erp_init.sql:/docker-entrypoint-initdb.d/init.sql:Z
+    networks:
+      - infra_network
+
+  postgres_ods:
+    image: postgres:latest
+    container_name: postgres_ods
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: ods_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - ods_db_data:/var/lib/postgresql/data
+      - ./scripts/init/ods_init.sql:/docker-entrypoint-initdb.d/init.sql:Z
+    networks:
+      - infra_network
+
+  #  ===================== PGADMIN ===================== 
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@ull.es
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "8081:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgres_erp
+      - postgres_ods
+    networks:
+      - infra_network
+
+volumes:
+  erp_db_data:
+  ods_db_data:
+  pgadmin_data:
+
+
+networks:
+  infra_network:
+    driver: bridge
