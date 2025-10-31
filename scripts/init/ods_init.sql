@@ -7,11 +7,11 @@
 CREATE TABLE IF NOT EXISTS infracciones_ambientales (
     geographical TEXT,
     geographical_code TEXT,
-    time INTEGER,
-    time_code INTEGER,
+    time TEXT,
+    time_code TEXT,
     measure TEXT,
     measure_code TEXT,
-    obs_value NUMERIC,
+    obs_value TEXT,
     confidencialidad_observacion TEXT,
     notas_observacion TEXT,
     estado_observacion TEXT,
@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS turistas_recibidos (
     time_code TEXT,
     measure TEXT,
     measure_code TEXT,
-    obs_value NUMERIC,
+    obs_value TEXT,
     confidencialidad_observacion TEXT,
     notas_observacion TEXT,
     estado_observacion TEXT,
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS visitantes_espacios_naturales (
     espacio_natural_protegido_code TEXT,
     time_period TEXT,
     time_period_code TEXT,
-    obs_value NUMERIC,
+    obs_value TEXT,
     periodo_recogida TEXT,
     confidencialidad_observacion TEXT,
     estado_observacion TEXT,
@@ -62,13 +62,14 @@ CREATE TABLE IF NOT EXISTS infracciones_acpmn (
     time_period_code TEXT,
     medidas TEXT,
     medidas_code TEXT,
-    obs_value NUMERIC,
+    obs_value TEXT,
     estado_observacion TEXT,
     estado_observacion_code TEXT,
     confidencialidad_observacion TEXT,
     notas_observacion TEXT,
     CONSTRAINT pk_infracciones_acpmn UNIQUE (territorio_code, time_period_code, tipo_infraccion_code, medidas_code)
 );
+
 
 
 CREATE USER airbyte PASSWORD 'admin123';

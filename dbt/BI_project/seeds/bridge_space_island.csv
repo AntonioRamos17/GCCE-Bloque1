@@ -1,9 +1,6 @@
-space_code,island_code,space_name
-ES703001,ES703,Parque Rural del Nublo
-ES704001,ES704,Parque Nacional de Timanfaya
-ES702001,ES702,Parque Natural de Jandía
-ES707001,ES707,Parque Nacional del Teide
-ES705001,ES705,Parque Nacional de La Caldera de Taburiente
-ES706001,ES706,Parque Nacional de Garajonay
-ES701001,ES701,Reserva Natural Integral de Mencáfete
+codigo_parque,codigo_isla,nombre_parque
 _T,ES70,Total Canarias
+348789_CDDA,ES707,La Caldera de Taburiente
+389013_CDDA,ES709,El Teide
+895_CDDA,ES708,Timanfaya
+897_CDDA,ES706,Garajonay
