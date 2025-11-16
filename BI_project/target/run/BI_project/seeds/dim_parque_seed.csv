@@ -1,9 +1,7 @@
 
     
     
-    
-    create table "ods_db"."public"."dim_parque_seed" ("codigo_parque" text,"codigo_isla" text,"nombre_parque" text)
-  ;
+    truncate table "ods_db"."public"."dim_parque_seed";
     -- dbt seed --
     
           insert into "ods_db"."public"."dim_parque_seed" ("codigo_parque", "codigo_isla", "nombre_parque") values

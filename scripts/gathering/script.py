@@ -31,8 +31,8 @@ urls = [
     ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/VIVIENDA_LIBRE_PRECIO_M2/data.csv", "valor_vivienda_m2"],
     ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_CARENCIA_MATERIAL_SEVERA_POB_E/data.csv", "carencia_bienes_vivienda"],
     ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_AROPE_POB_00A17_E/data.csv", "menores_pobreza"],
-    ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/AFILIACIONES_TURISMO/data.csv", "afiliaciones_turismo"],
-
+    ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/IPC/data.csv", "ipc_mes"],
+    ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/AFILIACIONES_TURISMO/data.csv", "afiliaciones_turismo"]
 ]
 
 

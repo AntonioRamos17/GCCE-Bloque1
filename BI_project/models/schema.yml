@@ -14,11 +14,20 @@ sources:
         description: "Datos sobre infracciones detectadas por la Administración de Costas (ACPMN)."
       - name: aguas_residuales
         description: "Datos acerca de las aguas residuales en Canarias"
+      - name: valor_vivienda_m2
+        description: "Valor del m2 de la vivienda"
+      - name: carencia_bienes_vivienda
+        description: "Datos de carencia de bienes de la vivienda"
+      - name: menores_pobreza
+        description: "Datos acerca de menores con posibilidad de acabar en sistuación de pobreza"
+      - name: ipc_mes
+        description: "Datos acerca del IPC de cada año"
+      - name: afiliaciones_turismo
+        description: "Datos acerca de afilaciones de la seguridad social en actividades relacionadas con el turismo"
       - name: dim_isla_seed
         description: "Dimensión para contextualizar la isla."
       - name: dim_parque_seed
         description: "Dimensión para contextualizar la parque."
-
 
 models:
   - name: stg_infracciones_ambientales
