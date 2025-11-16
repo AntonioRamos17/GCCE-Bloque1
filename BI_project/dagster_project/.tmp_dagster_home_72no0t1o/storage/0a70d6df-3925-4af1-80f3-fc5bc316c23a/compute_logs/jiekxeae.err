@@ -1,0 +1,86 @@
+[32m2025-11-08 22:36:58 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - LOGS_CAPTURED - Started capturing logs in process (pid: 81179).
+[32m2025-11-08 22:36:58 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_START - Started execution of step "BI_project_dbt_assets".
+[32m2025-11-08 22:36:58 +0000[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - BI_project_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'fqn:*']`.
+[32m2025-11-08 22:37:03 +0000[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - BI_project_dbt_assets - Copying `/home/usuario/BI_infrastructure/BI_project/target/partial_parse.msgpack` to `/home/usuario/BI_infrastructure/BI_project/target/BI_project_dbt_assets-0a70d6d-d7b7791/partial_parse.msgpack` to take advantage of partial parsing.
+[32m2025-11-08 22:37:03 +0000[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - BI_project_dbt_assets - Running dbt command: `dbt build --select fqn:*`.
+[32m2025-11-08 22:37:11 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_infracciones_acpmn" of type "Nothing". (Type check passed).
+[32m2025-11-08 22:37:11 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_MATERIALIZATION - Materialized value public stg_infracciones_acpmn.
+[32m2025-11-08 22:37:11 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_infracciones_ambientales" of type "Nothing". (Type check passed).
+[32m2025-11-08 22:37:11 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_MATERIALIZATION - Materialized value public stg_infracciones_ambientales.
+[32m2025-11-08 22:37:11 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_turistas_recibidos" of type "Nothing". (Type check passed).
+[32m2025-11-08 22:37:11 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_MATERIALIZATION - Materialized value public stg_turistas_recibidos.
+[32m2025-11-08 22:37:11 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_visitantes_espacios_naturales" of type "Nothing". (Type check passed).
+[32m2025-11-08 22:37:11 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_MATERIALIZATION - Materialized value public stg_visitantes_espacios_naturales.
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "bridge_space_island" of type "Nothing". (Type check passed).
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_MATERIALIZATION - Materialized value bridge_space_island.
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "dim_isla" of type "Nothing". (Type check passed).
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_MATERIALIZATION - Materialized value dim_isla.
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_infracciones_acpmn_not_null_stg_infracciones_acpmn_codigo_isla" of type "Any". (Type check passed).
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_stg_infracciones_acpmn_codigo_isla' on 'public/stg_infracciones_acpmn' passed.
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_infracciones_acpmn_not_null_stg_infracciones_acpmn_codigo_medida" of type "Any". (Type check passed).
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_stg_infracciones_acpmn_codigo_medida' on 'public/stg_infracciones_acpmn' passed.
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_infracciones_acpmn_not_null_stg_infracciones_acpmn_codigo_tipo_infraccion" of type "Any". (Type check passed).
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_stg_infracciones_acpmn_codigo_tipo_infraccion' on 'public/stg_infracciones_acpmn' passed.
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_infracciones_ambientales_not_null_stg_infracciones_ambientales_codigo_isla" of type "Any". (Type check passed).
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_stg_infracciones_ambientales_codigo_isla' on 'public/stg_infracciones_ambientales' passed.
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_infracciones_ambientales_not_null_stg_infracciones_ambientales_time_code" of type "Any". (Type check passed).
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_stg_infracciones_ambientales_time_code' on 'public/stg_infracciones_ambientales' did not pass.
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_turistas_recibidos_not_null_stg_turistas_recibidos_codigo_isla" of type "Any". (Type check passed).
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_stg_turistas_recibidos_codigo_isla' on 'public/stg_turistas_recibidos' passed.
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_turistas_recibidos_not_null_stg_turistas_recibidos_fecha_aproximada" of type "Any". (Type check passed).
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_stg_turistas_recibidos_fecha_aproximada' on 'public/stg_turistas_recibidos' passed.
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_visitantes_espacios_naturales_not_null_stg_visitantes_espacios_naturales_codigo_medida" of type "Any". (Type check passed).
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_stg_visitantes_espacios_naturales_codigo_medida' on 'public/stg_visitantes_espacios_naturales' passed.
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_visitantes_espacios_naturales_not_null_stg_visitantes_espacios_naturales_codigo_parque" of type "Any". (Type check passed).
+[32m2025-11-08 22:37:12 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_stg_visitantes_espacios_naturales_codigo_parque' on 'public/stg_visitantes_espacios_naturales' passed.
+[32m2025-11-08 22:37:13 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_OUTPUT - Yielded output "public__stg_visitantes_espacios_naturales_not_null_stg_visitantes_espacios_naturales_fecha_aproximada" of type "Any". (Type check passed).
+[32m2025-11-08 22:37:13 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_stg_visitantes_espacios_naturales_fecha_aproximada' on 'public/stg_visitantes_espacios_naturales' passed.
+[32m2025-11-08 22:37:13 +0000[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - BI_project_dbt_assets - Finished dbt command: `dbt build --select fqn:*`.
+[32m2025-11-08 22:37:13 +0000[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - 0a70d6df-3925-4af1-80f3-fc5bc316c23a - 81179 - BI_project_dbt_assets - STEP_FAILURE - Execution of step "BI_project_dbt_assets" failed.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt build --select fqn:*`
+
+failed with exit code `1`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: /home/usuario/BI_infrastructure/BI_project/target/BI_project_dbt_assets-0a70d6d-d7b7791/dbt.log.
+
+Errors parsed from dbt logs:
+
+11 of 17 ERROR not_null_stg_infracciones_ambientales_time_code ................. [[31mERROR[0m in 0.11s]
+
+[31mFailure in test not_null_stg_infracciones_ambientales_time_code (models/schema.yml)[0m
+
+  Database Error in test not_null_stg_infracciones_ambientales_time_code (models/schema.yml)
+  column "time_code" does not exist
+  LINE 16: select time_code
+                  ^
+  compiled code at target/BI_project_dbt_assets-0a70d6d-d7b7791/run/BI_project/models/schema.yml/not_null_stg_infracciones_ambientales_time_code.sql
+
+Stack Trace:
+  File "/home/usuario/BI_infrastructure/environments/venv_bi/lib/python3.12/site-packages/dagster/_core/execution/plan/execute_plan.py", line 247, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "/home/usuario/BI_infrastructure/environments/venv_bi/lib/python3.12/site-packages/dagster/_core/execution/plan/execute_step.py", line 504, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+  File "/home/usuario/BI_infrastructure/environments/venv_bi/lib/python3.12/site-packages/dagster/_core/execution/plan/execute_step.py", line 183, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+  File "/home/usuario/BI_infrastructure/environments/venv_bi/lib/python3.12/site-packages/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+  File "/home/usuario/BI_infrastructure/environments/venv_bi/lib/python3.12/site-packages/dagster/_core/execution/plan/compute.py", line 190, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+  File "/home/usuario/BI_infrastructure/environments/venv_bi/lib/python3.12/site-packages/dagster/_core/execution/plan/compute.py", line 159, in _yield_compute_results
+    for event in iterate_with_context(
+  File "/home/usuario/BI_infrastructure/environments/venv_bi/lib/python3.12/site-packages/dagster/_utils/__init__.py", line 392, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/home/usuario/BI_infrastructure/BI_project/dagster_project/dagster_project/dbt.py", line 9, in BI_project_dbt_assets
+    yield from dbt.cli(["build"], context=context).stream()
+  File "/home/usuario/BI_infrastructure/environments/venv_bi/lib/python3.12/site-packages/dagster_dbt/core/dbt_event_iterator.py", line 215, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/usuario/BI_infrastructure/environments/venv_bi/lib/python3.12/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 289, in _stream_asset_events
+    for event in self.stream_raw_events():
+  File "/home/usuario/BI_infrastructure/environments/venv_bi/lib/python3.12/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 382, in stream_raw_events
+    self._raise_on_error()
+  File "/home/usuario/BI_infrastructure/environments/venv_bi/lib/python3.12/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 475, in _raise_on_error
+    raise error
+[0m

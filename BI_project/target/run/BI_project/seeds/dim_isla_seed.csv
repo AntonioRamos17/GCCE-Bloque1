@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "ods_db"."public"."dim_isla_seed" ("codigo_isla" text,"nombre_isla" text)
+  ;
+    -- dbt seed --
+    
+          insert into "ods_db"."public"."dim_isla_seed" ("codigo_isla", "nombre_isla") values
+          (%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s)
+      
+
+;
+  

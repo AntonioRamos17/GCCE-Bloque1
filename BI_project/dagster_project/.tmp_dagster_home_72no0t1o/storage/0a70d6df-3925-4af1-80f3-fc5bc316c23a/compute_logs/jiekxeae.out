@@ -1,0 +1,57 @@
+Running with dbt=1.10.13
+Registered adapter: postgres=1.9.1
+[[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.BI_project.marts
+Found 5 models, 2 seeds, 10 data tests, 4 sources, 447 macros
+
+Concurrency: 1 threads (target='dev')
+
+1 of 17 START sql table model schema.yml_public.stg_infracciones_acpmn ......... [RUN]
+1 of 17 OK created sql table model schema.yml_public.stg_infracciones_acpmn .... [[32mSELECT 9984[0m in 0.41s]
+2 of 17 START sql table model schema.yml_public.stg_infracciones_ambientales ... [RUN]
+2 of 17 OK created sql table model schema.yml_public.stg_infracciones_ambientales  [[32mSELECT 1040[0m in 0.19s]
+3 of 17 START sql table model schema.yml_public.stg_turistas_recibidos ......... [RUN]
+3 of 17 OK created sql table model schema.yml_public.stg_turistas_recibidos .... [[32mSELECT 6120[0m in 0.24s]
+4 of 17 START sql table model schema.yml_public.stg_visitantes_espacios_naturales  [RUN]
+4 of 17 OK created sql table model schema.yml_public.stg_visitantes_espacios_naturales  [[32mSELECT 3900[0m in 0.15s]
+5 of 17 START seed file schema.yml.bridge_space_island ......................... [RUN]
+5 of 17 OK loaded seed file schema.yml.bridge_space_island ..................... [[32mINSERT 5[0m in 0.32s]
+6 of 17 START seed file schema.yml.dim_isla .................................... [RUN]
+6 of 17 OK loaded seed file schema.yml.dim_isla ................................ [[32mINSERT 8[0m in 0.14s]
+7 of 17 START test not_null_stg_infracciones_acpmn_codigo_isla ................. [RUN]
+7 of 17 PASS not_null_stg_infracciones_acpmn_codigo_isla ....................... [[32mPASS[0m in 0.14s]
+8 of 17 START test not_null_stg_infracciones_acpmn_codigo_medida ............... [RUN]
+8 of 17 PASS not_null_stg_infracciones_acpmn_codigo_medida ..................... [[32mPASS[0m in 0.07s]
+9 of 17 START test not_null_stg_infracciones_acpmn_codigo_tipo_infraccion ...... [RUN]
+9 of 17 PASS not_null_stg_infracciones_acpmn_codigo_tipo_infraccion ............ [[32mPASS[0m in 0.05s]
+10 of 17 START test not_null_stg_infracciones_ambientales_codigo_isla .......... [RUN]
+10 of 17 PASS not_null_stg_infracciones_ambientales_codigo_isla ................ [[32mPASS[0m in 0.06s]
+11 of 17 START test not_null_stg_infracciones_ambientales_time_code ............ [RUN]
+11 of 17 ERROR not_null_stg_infracciones_ambientales_time_code ................. [[31mERROR[0m in 0.11s]
+12 of 17 START test not_null_stg_turistas_recibidos_codigo_isla ................ [RUN]
+12 of 17 PASS not_null_stg_turistas_recibidos_codigo_isla ...................... [[32mPASS[0m in 0.09s]
+13 of 17 START test not_null_stg_turistas_recibidos_fecha_aproximada ........... [RUN]
+13 of 17 PASS not_null_stg_turistas_recibidos_fecha_aproximada ................. [[32mPASS[0m in 0.08s]
+14 of 17 START test not_null_stg_visitantes_espacios_naturales_codigo_medida ... [RUN]
+14 of 17 PASS not_null_stg_visitantes_espacios_naturales_codigo_medida ......... [[32mPASS[0m in 0.10s]
+15 of 17 START test not_null_stg_visitantes_espacios_naturales_codigo_parque ... [RUN]
+15 of 17 PASS not_null_stg_visitantes_espacios_naturales_codigo_parque ......... [[32mPASS[0m in 0.05s]
+16 of 17 START test not_null_stg_visitantes_espacios_naturales_fecha_aproximada  [RUN]
+16 of 17 PASS not_null_stg_visitantes_espacios_naturales_fecha_aproximada ...... [[32mPASS[0m in 0.06s]
+17 of 17 SKIP relation schema.yml_public.f_miau ................................ [[33mSKIP[0m]
+
+Finished running 2 seeds, 5 table models, 10 data tests in 0 hours 0 minutes and 3.18 seconds (3.18s).
+
+[31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+
+[31mFailure in test not_null_stg_infracciones_ambientales_time_code (models/schema.yml)[0m
+  Database Error in test not_null_stg_infracciones_ambientales_time_code (models/schema.yml)
+  column "time_code" does not exist
+  LINE 16: select time_code
+                  ^
+  compiled code at target/BI_project_dbt_assets-0a70d6d-d7b7791/run/BI_project/models/schema.yml/not_null_stg_infracciones_ambientales_time_code.sql
+
+  compiled code at target/BI_project_dbt_assets-0a70d6d-d7b7791/compiled/BI_project/models/schema.yml/not_null_stg_infracciones_ambientales_time_code.sql
+
+Done. PASS=15 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=17

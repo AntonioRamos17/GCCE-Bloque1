@@ -26,7 +26,13 @@ urls = [
     ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv", "infracciones_ambientales"],
     ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv", "turistas_recibidos"],
     ["https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv", "infracciones_acpmn"],
-    ["https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv", "visitantes_espacios_naturales"]
+    ["https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv", "visitantes_espacios_naturales"],
+    ["https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv", "aguas_residuales"],
+    ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/VIVIENDA_LIBRE_PRECIO_M2/data.csv", "valor_vivienda_m2"],
+    ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_CARENCIA_MATERIAL_SEVERA_POB_E/data.csv", "carencia_bienes_vivienda"],
+    ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_AROPE_POB_00A17_E/data.csv", "menores_pobreza"],
+    ["https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/AFILIACIONES_TURISMO/data.csv", "afiliaciones_turismo"],
+
 ]
 
 

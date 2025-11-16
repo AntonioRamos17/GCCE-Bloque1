@@ -479,3 +479,322 @@ CONTEXT:  COPY visitantes_espacios_naturales, line 28, column time_period_code: 
 [+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
 [2025-10-31 20:06:21] Update completed successfully.
 ------------------------------------------------------------
+[2025-11-01 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
+[2025-11-01 06:00:10] Update completed successfully.
+------------------------------------------------------------
+[2025-11-02 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
+[2025-11-02 06:00:10] Update completed successfully.
+------------------------------------------------------------
+[2025-11-03 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
+[2025-11-03 06:00:10] Update completed successfully.
+------------------------------------------------------------
+[2025-11-04 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
+[2025-11-04 06:00:14] Update completed successfully.
+------------------------------------------------------------
+[2025-11-05 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
+[2025-11-05 06:00:10] Update completed successfully.
+------------------------------------------------------------
+[2025-11-06 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
+[2025-11-06 06:00:11] Update completed successfully.
+------------------------------------------------------------
+[2025-11-07 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
+[2025-11-07 06:00:09] Update completed successfully.
+------------------------------------------------------------
+[2025-11-08 06:00:01] Starting data update...
+Traceback (most recent call last):
+  File "/home/usuario/BI_infrastructure/scripts/gathering/./script.py", line 34, in <module>
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/usuario/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-11-08 06:00:01] ERROR during update execution.
+------------------------------------------------------------
+[2025-11-09 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos nuevos insertados correctamente en visitantes_espacios_naturales.
+[2025-11-09 06:00:15] Update completed successfully.
+------------------------------------------------------------
+[2025-11-09 19:01:20] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv
+Traceback (most recent call last):
+  File "/home/usuario/BI_infrastructure/scripts/gathering/./script.py", line 43, in <module>
+    fetchData(url, target_table, cur)
+  File "/home/usuario/BI_infrastructure/scripts/gathering/./script.py", line 18, in fetchData
+    cursor.execute(f"DELETE FROM {target_table};")
+psycopg2.errors.UndefinedTable: relation "aguas_residuales" does not exist
+LINE 1: DELETE FROM aguas_residuales;
+                    ^
+
+[2025-11-09 19:01:33] ERROR during update execution.
+------------------------------------------------------------
+[2025-11-09 19:15:06] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv
+[+] Datos insertados en aguas_residuales
+[+] Datos nuevos insertados correctamente en aguas_residuales.
+[2025-11-09 19:15:19] Update completed successfully.
+------------------------------------------------------------
+[2025-11-10 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv
+[+] Datos insertados en aguas_residuales
+[+] Datos nuevos insertados correctamente en aguas_residuales.
+[2025-11-10 06:00:16] Update completed successfully.
+------------------------------------------------------------
+[2025-11-11 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv
+[+] Datos insertados en aguas_residuales
+[+] Datos nuevos insertados correctamente en aguas_residuales.
+[2025-11-11 06:00:15] Update completed successfully.
+------------------------------------------------------------
+[2025-11-12 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv
+[+] Datos insertados en aguas_residuales
+[+] Datos nuevos insertados correctamente en aguas_residuales.
+[2025-11-12 06:00:15] Update completed successfully.
+------------------------------------------------------------
+[2025-11-12 19:57:58] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv
+[+] Datos insertados en aguas_residuales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/VIVIENDA_LIBRE_PRECIO_M2/data.csv
+Traceback (most recent call last):
+  File "/home/usuario/BI_infrastructure/scripts/gathering/./script.py", line 48, in <module>
+    fetchData(url, target_table, cur)
+  File "/home/usuario/BI_infrastructure/scripts/gathering/./script.py", line 18, in fetchData
+    cursor.execute(f"DELETE FROM {target_table};")
+psycopg2.errors.UndefinedTable: relation "valor_vivienda_m2" does not exist
+LINE 1: DELETE FROM valor_vivienda_m2;
+                    ^
+
+[2025-11-12 19:58:13] ERROR during update execution.
+------------------------------------------------------------
+[2025-11-12 19:59:36] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv
+[+] Datos insertados en aguas_residuales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/VIVIENDA_LIBRE_PRECIO_M2/data.csv
+[+] Datos insertados en valor_vivienda_m2
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_CARENCIA_MATERIAL_SEVERA_POB_E/data.csv
+[+] Datos insertados en carencia_bienes_vivienda
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_AROPE_POB_00A17_E/data.csv
+[+] Datos insertados en menores_pobreza
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/AFILIACIONES_TURISMO/data.csv
+[+] Datos insertados en afiliaciones_turismo
+[+] Datos nuevos insertados correctamente en afiliaciones_turismo.
+[2025-11-12 19:59:57] Update completed successfully.
+------------------------------------------------------------
+[2025-11-13 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv
+[+] Datos insertados en aguas_residuales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/VIVIENDA_LIBRE_PRECIO_M2/data.csv
+[+] Datos insertados en valor_vivienda_m2
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_CARENCIA_MATERIAL_SEVERA_POB_E/data.csv
+[+] Datos insertados en carencia_bienes_vivienda
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_AROPE_POB_00A17_E/data.csv
+[+] Datos insertados en menores_pobreza
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/AFILIACIONES_TURISMO/data.csv
+[+] Datos insertados en afiliaciones_turismo
+[+] Datos nuevos insertados correctamente en afiliaciones_turismo.
+[2025-11-13 06:00:30] Update completed successfully.
+------------------------------------------------------------
+[2025-11-14 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv
+[+] Datos insertados en aguas_residuales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/VIVIENDA_LIBRE_PRECIO_M2/data.csv
+[+] Datos insertados en valor_vivienda_m2
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_CARENCIA_MATERIAL_SEVERA_POB_E/data.csv
+[+] Datos insertados en carencia_bienes_vivienda
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_AROPE_POB_00A17_E/data.csv
+[+] Datos insertados en menores_pobreza
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/AFILIACIONES_TURISMO/data.csv
+[+] Datos insertados en afiliaciones_turismo
+[+] Datos nuevos insertados correctamente en afiliaciones_turismo.
+[2025-11-14 06:00:28] Update completed successfully.
+------------------------------------------------------------
+[2025-11-15 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv
+[+] Datos insertados en aguas_residuales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/VIVIENDA_LIBRE_PRECIO_M2/data.csv
+[+] Datos insertados en valor_vivienda_m2
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_CARENCIA_MATERIAL_SEVERA_POB_E/data.csv
+[+] Datos insertados en carencia_bienes_vivienda
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_AROPE_POB_00A17_E/data.csv
+[+] Datos insertados en menores_pobreza
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/AFILIACIONES_TURISMO/data.csv
+[+] Datos insertados en afiliaciones_turismo
+[+] Datos nuevos insertados correctamente en afiliaciones_turismo.
+[2025-11-15 06:00:26] Update completed successfully.
+------------------------------------------------------------
+[2025-11-16 06:00:01] Starting data update...
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/INFRACCIONES_AMBIENTALES/data.csv
+[+] Datos insertados en infracciones_ambientales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/TURISTAS/data.csv
+[+] Datos insertados en turistas_recibidos
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00103A_000001/~latest.csv
+[+] Datos insertados en infracciones_acpmn
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00005A_000003/~latest.csv
+[+] Datos insertados en visitantes_espacios_naturales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00043A_000003/~latest.csv
+[+] Datos insertados en aguas_residuales
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/VIVIENDA_LIBRE_PRECIO_M2/data.csv
+[+] Datos insertados en valor_vivienda_m2
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_CARENCIA_MATERIAL_SEVERA_POB_E/data.csv
+[+] Datos insertados en carencia_bienes_vivienda
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/POBREZA_AROPE_POB_00A17_E/data.csv
+[+] Datos insertados en menores_pobreza
+[+] Datos obtenidos de https://datos.canarias.es/api/estadisticas/indicators/v1.0/indicators/AFILIACIONES_TURISMO/data.csv
+[+] Datos insertados en afiliaciones_turismo
+[+] Datos nuevos insertados correctamente en afiliaciones_turismo.
+[2025-11-16 06:00:26] Update completed successfully.
+------------------------------------------------------------
