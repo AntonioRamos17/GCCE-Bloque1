@@ -13,7 +13,7 @@
   group by anyo, codigo_isla, nombre_isla
   having extract(year from fecha_aproximada)::int >= 2010
      and extract(year from fecha_aproximada)::int <= 2024
-     and codigo_isla like '%ES70'
+     -- and codigo_isla like '%ES70'
 ),
 
 infracciones_ambientales_anyo as (
@@ -26,7 +26,7 @@ infracciones_ambientales_anyo as (
   group by anyo, codigo_isla, nombre_isla
   having extract(year from fecha_aproximada)::int >= 2010
      and extract(year from fecha_aproximada)::int <= 2024
-     and codigo_isla like '%ES70'
+     -- and codigo_isla like '%ES70'
 ),
 
 joined as (
