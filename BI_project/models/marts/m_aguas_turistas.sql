@@ -61,4 +61,4 @@ select
       0
     ) as v_aguas_residuales_minmax
 
-from joined;
+from joined

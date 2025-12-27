@@ -60,4 +60,4 @@ select
     ) as visitantes_parques_por_turista_minmax
 
 from joined
-order by anyo;
+order by anyo

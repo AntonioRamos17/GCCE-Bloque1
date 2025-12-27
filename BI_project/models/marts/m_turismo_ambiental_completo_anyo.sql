@@ -71,4 +71,4 @@ select
     ) as n_infracciones_minmax
 
 from joined
-order by anyo, codigo_isla;
+order by anyo, codigo_isla

@@ -67,4 +67,4 @@ select
     ) as afiliaciones_por_turista_minmax
 
 from joined
-order by anyo;
+order by anyo

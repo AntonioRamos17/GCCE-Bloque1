@@ -65,4 +65,4 @@ select
       0
     ) as n_infracciones_ambientales_minmax
 
-from joined;
+from joined

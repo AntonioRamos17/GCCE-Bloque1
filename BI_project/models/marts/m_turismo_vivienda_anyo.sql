@@ -79,4 +79,4 @@ select
     ) as carencia_bienes_vivienda_minmax
 
 from joined
-order by anyo;
+order by anyo
