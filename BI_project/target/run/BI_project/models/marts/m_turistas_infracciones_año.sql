@@ -13,7 +13,6 @@
   group by anyo, codigo_isla, nombre_isla
   having extract(year from fecha_aproximada)::int >= 2010
      and extract(year from fecha_aproximada)::int <= 2024
-     -- and codigo_isla like '%ES70'
 ),
 
 infracciones_ambientales_anyo as (
@@ -26,7 +25,6 @@ infracciones_ambientales_anyo as (
   group by anyo, codigo_isla, nombre_isla
   having extract(year from fecha_aproximada)::int >= 2010
      and extract(year from fecha_aproximada)::int <= 2024
-     -- and codigo_isla like '%ES70'
 ),
 
 joined as (
@@ -38,10 +36,7 @@ joined as (
     i.n_infracciones_ambientales
   from turistas_anyo t
   full join infracciones_ambientales_anyo i
-    on t.anyo = i.anyo
-   -- si quieres que matchee también por isla:
-   -- and t.codigo_isla = i.codigo_isla
-   -- and t.nombre_isla = i.nombre_isla
+    on t.anyo = i.anyo and t.codigo_isla = i.codigo_isla
 )
 
 select
