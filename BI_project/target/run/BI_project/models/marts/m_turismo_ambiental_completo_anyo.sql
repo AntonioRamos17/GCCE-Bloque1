@@ -1,5 +1,5 @@
 
-  create view "ods_db"."public"."m_turismo_ambiental_completo_anyo__dbt_tmp"
+  create view "ods_db"."schema.yml"."m_turismo_ambiental_completo_anyo__dbt_tmp"
     
     
   as (
@@ -10,7 +10,7 @@
         nombre_isla,
         n_turistas,
         v_aguas_residuales
-    from "ods_db"."public"."m_aguas_turistas"
+    from "ods_db"."schema.yml"."m_aguas_turistas"
 ),
 
 infrac as (
@@ -20,7 +20,7 @@ infrac as (
         nombre_isla,
         n_turistas as n_turistas_infrac,
         n_infracciones_ambientales
-    from "ods_db"."public"."m_turistas_infracciones_año"
+    from "ods_db"."schema.yml"."m_turistas_infracciones_año"
 ),
 
 joined as (

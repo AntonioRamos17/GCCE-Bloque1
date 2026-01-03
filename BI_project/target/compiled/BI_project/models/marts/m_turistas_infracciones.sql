@@ -5,7 +5,7 @@ with infrac as (
         nombre_isla,
         n_turistas as n_turistas,
         n_infracciones_ambientales
-    from "ods_db"."public"."m_turistas_infracciones_año"
+    from "ods_db"."schema.yml"."m_turistas_infracciones_año"
 )
 
 select

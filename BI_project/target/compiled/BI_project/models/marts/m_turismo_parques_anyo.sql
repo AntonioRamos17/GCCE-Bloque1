@@ -2,7 +2,7 @@ with turistas_anyo_canarias as (
   select
     extract(year from fecha_aproximada)::int as anyo,
     sum(n_turistas) as n_turistas_canarias
-  from "ods_db"."public"."f_turistas_isla_mes"
+  from "ods_db"."schema.yml"."f_turistas_isla_mes"
   group by anyo
 ),
 
@@ -10,7 +10,7 @@ visitantes_parques_anyo as (
   select
     extract(year from fecha_aproximada)::int as anyo,
     sum(valor_medicion)::numeric as n_visitantes_parques
-  from "ods_db"."public"."stg_visitantes_espacios_naturales"
+  from "ods_db"."schema.yml"."stg_visitantes_espacios_naturales"
   group by anyo
 ),
 

@@ -1,5 +1,5 @@
 
-  create view "ods_db"."public"."m_aguas_turistas__dbt_tmp"
+  create view "ods_db"."schema.yml"."m_aguas_turistas__dbt_tmp"
     
     
   as (
@@ -9,7 +9,7 @@
     codigo_isla,
     nombre_isla,
     sum(n_turistas) as n_turistas
-  from "ods_db"."public"."f_turistas_isla_mes"
+  from "ods_db"."schema.yml"."f_turistas_isla_mes"
   group by anyo, codigo_isla, nombre_isla
   having extract(year from fecha_aproximada)::int >= 2010
      and extract(year from fecha_aproximada)::int <= 2024
@@ -21,7 +21,7 @@ aguas_anyo as (
     extract(year from fecha_aproximada)::int as anyo,
     codigo_isla,
     sum(valor_medicion) as v_aguas_residuales
-  from "ods_db"."public"."stg_aguas_residuales"
+  from "ods_db"."schema.yml"."stg_aguas_residuales"
   group by anyo, codigo_isla, codigo_medida
   having extract(year from fecha_aproximada)::int >= 2020
      and extract(year from fecha_aproximada)::int <= 2025

@@ -1,5 +1,5 @@
 
-  create view "ods_db"."public"."dim_fecha__dbt_tmp"
+  create view "ods_db"."schema.yml"."dim_fecha__dbt_tmp"
     
     
   as (

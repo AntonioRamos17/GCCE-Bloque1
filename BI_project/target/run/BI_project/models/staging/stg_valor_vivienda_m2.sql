@@ -1,5 +1,5 @@
 
-  create view "ods_db"."public"."stg_valor_vivienda_m2__dbt_tmp"
+  create view "ods_db"."schema.yml"."stg_valor_vivienda_m2__dbt_tmp"
     
     
   as (

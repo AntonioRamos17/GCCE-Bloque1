@@ -15,8 +15,8 @@ AIRBYTE_CONFIG = {
     "password": "admin123"
 }
 
-DBT_PROJECT_DIR = file_relative_path(__file__, "../../dbt_project")
-DBT_PROFILES_DIR = file_relative_path(__file__, "../../dbt_project")
+DBT_PROJECT_DIR = file_relative_path(__file__, "../../BI_project")
+DBT_PROFILES_DIR = file_relative_path(__file__, "../../BI_project")
 
 DBT_CONFIG = {"project_dir": DBT_PROJECT_DIR, "profiles_dir": DBT_PROFILES_DIR}
 

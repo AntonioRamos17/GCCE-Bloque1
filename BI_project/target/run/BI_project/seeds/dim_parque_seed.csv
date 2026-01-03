@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "ods_db"."schema.yml"."dim_parque_seed";
+    -- dbt seed --
+    
+          insert into "ods_db"."schema.yml"."dim_parque_seed" ("codigo_parque", "codigo_isla", "nombre_parque") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      
+
+;
+  

@@ -1,5 +1,5 @@
 
-  create view "ods_db"."public"."m_turismo_empleo_anyo__dbt_tmp"
+  create view "ods_db"."schema.yml"."m_turismo_empleo_anyo__dbt_tmp"
     
     
   as (
@@ -9,7 +9,7 @@
       codigo_isla,
       nombre_isla,
       sum(n_turistas) as n_turistas
-    from "ods_db"."public"."f_turistas_isla_mes"
+    from "ods_db"."schema.yml"."f_turistas_isla_mes"
     group by anyo, codigo_isla, nombre_isla
 ),
 
@@ -18,7 +18,7 @@ afiliaciones_anyo as (
       extract(year from fecha_aproximada)::int as anyo,
       codigo_isla,
       sum(valor_medicion) as n_afiliaciones_turismo
-    from "ods_db"."public"."stg_afiliaciones_turismo"
+    from "ods_db"."schema.yml"."stg_afiliaciones_turismo"
     group by anyo, codigo_isla
 ),
 

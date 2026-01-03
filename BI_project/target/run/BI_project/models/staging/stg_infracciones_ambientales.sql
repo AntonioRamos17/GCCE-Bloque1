@@ -1,5 +1,5 @@
 
-  create view "ods_db"."public"."stg_infracciones_ambientales__dbt_tmp"
+  create view "ods_db"."schema.yml"."stg_infracciones_ambientales__dbt_tmp"
     
     
   as (

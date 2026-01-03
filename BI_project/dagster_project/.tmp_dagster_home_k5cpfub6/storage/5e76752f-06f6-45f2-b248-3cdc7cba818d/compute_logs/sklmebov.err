@@ -1,0 +1,7 @@
+[32m2026-01-03 22:00:21 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5e76752f-06f6-45f2-b248-3cdc7cba818d - 648696 - LOGS_CAPTURED - Started capturing logs in process (pid: 648696).
+[32m2026-01-03 22:00:21 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5e76752f-06f6-45f2-b248-3cdc7cba818d - 648696 - airbyte_ingestion - STEP_START - Started execution of step "airbyte_ingestion".
+[32m2026-01-03 22:00:22 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5e76752f-06f6-45f2-b248-3cdc7cba818d - 648696 - airbyte_ingestion - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-01-03 22:00:22 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5e76752f-06f6-45f2-b248-3cdc7cba818d - airbyte_ingestion - Writing file at: /home/usuario/BI_infrastructure/BI_project/dagster_project/.tmp_dagster_home_k5cpfub6/storage/airbyte_ingestion using PickledObjectFilesystemIOManager...
+[32m2026-01-03 22:00:22 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5e76752f-06f6-45f2-b248-3cdc7cba818d - 648696 - airbyte_ingestion - ASSET_MATERIALIZATION - Materialized value airbyte_ingestion.
+[32m2026-01-03 22:00:22 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5e76752f-06f6-45f2-b248-3cdc7cba818d - 648696 - airbyte_ingestion - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-01-03 22:00:22 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5e76752f-06f6-45f2-b248-3cdc7cba818d - 648696 - airbyte_ingestion - STEP_SUCCESS - Finished execution of step "airbyte_ingestion" in 721ms.
