@@ -1,0 +1,69 @@
+
+  create view "ods_db"."public"."m_turistas_infracciones_año__dbt_tmp"
+    
+    
+  as (
+    with turistas_anyo as (
+  select
+    extract(year from fecha_aproximada)::int as anyo,
+    codigo_isla,
+    nombre_isla,
+    sum(n_turistas) as n_turistas
+  from "ods_db"."public"."f_turistas_isla_mes"
+  group by anyo, codigo_isla, nombre_isla
+  having extract(year from fecha_aproximada)::int >= 2010
+     and extract(year from fecha_aproximada)::int <= 2024
+),
+
+infracciones_ambientales_anyo as (
+  select
+    extract(year from fecha_aproximada)::int as anyo,
+    codigo_isla,
+    nombre_isla,
+    sum(n_infracciones_ambientales) as n_infracciones_ambientales
+  from "ods_db"."public"."f_infracciones_ambientales_mes"
+  group by anyo, codigo_isla, nombre_isla
+  having extract(year from fecha_aproximada)::int >= 2010
+     and extract(year from fecha_aproximada)::int <= 2024
+),
+
+joined as (
+  select
+    t.anyo,
+    t.codigo_isla,
+    t.nombre_isla,
+    t.n_turistas,
+    i.n_infracciones_ambientales
+  from turistas_anyo t
+  full join infracciones_ambientales_anyo i
+    on t.anyo = i.anyo and t.codigo_isla = i.codigo_isla
+)
+
+select
+  anyo,
+  codigo_isla,
+  nombre_isla,
+  n_turistas,
+  n_infracciones_ambientales,
+
+  -- Min-max global turistas
+  (n_turistas
+    - min(n_turistas) over ()
+  )
+  / nullif(
+      max(n_turistas) over () - min(n_turistas) over (),
+      0
+    ) as n_turistas_minmax,
+
+  -- Min-max global infracciones ambientales
+  (n_infracciones_ambientales
+    - min(n_infracciones_ambientales) over ()
+  )
+  / nullif(
+      max(n_infracciones_ambientales) over ()
+      - min(n_infracciones_ambientales) over (),
+      0
+    ) as n_infracciones_ambientales_minmax
+
+from joined
+  );

@@ -1,4 +1,4 @@
-from dagster import Definitions
+from dagster import Definitions, AssetKey
 from dagster_dbt import DbtCliResource
 
 from .dbt import BI_project_dbt_assets
