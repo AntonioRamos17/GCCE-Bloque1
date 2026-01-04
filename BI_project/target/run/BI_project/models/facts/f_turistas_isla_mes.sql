@@ -1,5 +1,5 @@
 
-  create view "ods_db"."schema.yml"."f_turistas_isla_mes__dbt_tmp"
+  create view "ods_db"."public"."f_turistas_isla_mes__dbt_tmp"
     
     
   as (
@@ -9,8 +9,8 @@
     tr.codigo_isla,
     i.nombre_isla,
     tr.valor_medicion::numeric as n_turistas
-  from "ods_db"."schema.yml"."stg_turistas_recibidos" tr
-  join "ods_db"."schema.yml"."dim_isla" i
+  from "ods_db"."public"."stg_turistas_recibidos" tr
+  join "ods_db"."public"."dim_isla" i
     on i.codigo_isla = tr.codigo_isla
   where tr.codigo_medida LIKE '%ABSOLUTE%'
   order by tr.codigo_isla, tr.fecha_aproximada

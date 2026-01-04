@@ -1,10 +1,11 @@
 
-  create view "ods_db"."schema.yml"."stg_turistas_recibidos__dbt_tmp"
+  create view "ods_db"."public"."stg_turistas_recibidos__dbt_tmp"
     
     
   as (
     with base as (
   select
+    DISTINCT
     upper(trim(geographical_code))          as codigo_isla,
     trim(time_code)                         as time_code_raw,
     trim(measure)                           as medida,

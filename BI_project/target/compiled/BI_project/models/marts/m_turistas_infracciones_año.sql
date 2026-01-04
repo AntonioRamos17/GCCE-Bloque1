@@ -4,7 +4,7 @@ with turistas_anyo as (
     codigo_isla,
     nombre_isla,
     sum(n_turistas) as n_turistas
-  from "ods_db"."schema.yml"."f_turistas_isla_mes"
+  from "ods_db"."public"."f_turistas_isla_mes"
   group by anyo, codigo_isla, nombre_isla
   having extract(year from fecha_aproximada)::int >= 2010
      and extract(year from fecha_aproximada)::int <= 2024
@@ -16,7 +16,7 @@ infracciones_ambientales_anyo as (
     codigo_isla,
     nombre_isla,
     sum(n_infracciones_ambientales) as n_infracciones_ambientales
-  from "ods_db"."schema.yml"."f_infracciones_ambientales_mes"
+  from "ods_db"."public"."f_infracciones_ambientales_mes"
   group by anyo, codigo_isla, nombre_isla
   having extract(year from fecha_aproximada)::int >= 2010
      and extract(year from fecha_aproximada)::int <= 2024

@@ -1,5 +1,5 @@
 
-  create view "ods_db"."schema.yml"."stg_aguas_residuales__dbt_tmp"
+  create view "ods_db"."public"."stg_aguas_residuales__dbt_tmp"
     
     
   as (

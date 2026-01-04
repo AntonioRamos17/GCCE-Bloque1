@@ -1,5 +1,5 @@
 
-  create view "ods_db"."schema.yml"."f_infracciones_ambientales_mes__dbt_tmp"
+  create view "ods_db"."public"."f_infracciones_ambientales_mes__dbt_tmp"
     
     
   as (
@@ -9,8 +9,8 @@
     ia.codigo_isla,
     i.nombre_isla,
     ia.valor_medicion::numeric as n_infracciones_ambientales
-  from "ods_db"."schema.yml"."stg_infracciones_ambientales" ia
-  join "ods_db"."schema.yml"."dim_isla" i
+  from "ods_db"."public"."stg_infracciones_ambientales" ia
+  join "ods_db"."public"."dim_isla" i
     on i.codigo_isla = ia.codigo_isla
   where ia.codigo_medida LIKE '%ABSOLUTE%'
   order by ia.codigo_isla, ia.fecha_aproximada

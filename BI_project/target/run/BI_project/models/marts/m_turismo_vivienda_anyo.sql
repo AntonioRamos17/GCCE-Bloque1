@@ -1,5 +1,5 @@
 
-  create view "ods_db"."schema.yml"."m_turismo_vivienda_anyo__dbt_tmp"
+  create view "ods_db"."public"."m_turismo_vivienda_anyo__dbt_tmp"
     
     
   as (
@@ -9,7 +9,7 @@
     codigo_isla,
     nombre_isla,
     sum(n_turistas) as n_turistas
-  from "ods_db"."schema.yml"."f_turistas_isla_mes"
+  from "ods_db"."public"."f_turistas_isla_mes"
   group by anyo, codigo_isla, nombre_isla
 ),
 
@@ -18,7 +18,7 @@ vivienda_anyo as (
     extract(year from fecha_aproximada)::int as anyo,
     codigo_isla,
     avg(valor_medicion) as precio_m2_medio
-  from "ods_db"."schema.yml"."stg_valor_vivienda_m2"
+  from "ods_db"."public"."stg_valor_vivienda_m2"
   group by anyo, codigo_isla
 ),
 
@@ -27,7 +27,7 @@ carencia_anyo as (
     extract(year from fecha_aproximada)::int as anyo,
     codigo_isla,
     avg(valor_medicion) as carencia_bienes_vivienda
-  from "ods_db"."schema.yml"."stg_carencia_bienes_vivienda"
+  from "ods_db"."public"."stg_carencia_bienes_vivienda"
   group by anyo, codigo_isla
 ),
 

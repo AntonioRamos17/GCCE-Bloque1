@@ -1,5 +1,5 @@
 
-  create view "ods_db"."schema.yml"."stg_visitantes_espacios_naturales__dbt_tmp"
+  create view "ods_db"."public"."stg_visitantes_espacios_naturales__dbt_tmp"
     
     
   as (
@@ -34,7 +34,7 @@ parques as (
         codigo_parque,
         codigo_isla,
         nombre_parque
-    from "ods_db"."schema.yml"."dim_parque_seed"
+    from "ods_db"."public"."dim_parque_seed"
 )
 
 select

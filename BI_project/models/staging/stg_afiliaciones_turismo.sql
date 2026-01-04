@@ -7,12 +7,35 @@ with base as (
     cast(obs_value as numeric)              as valor_medicion
   from {{ source('public', 'afiliaciones_turismo') }}
   where measure_code like 'ABSOLUTE'
+),
+
+con_fechas as (
+  select
+    codigo_isla,
+    codigo_medida,
+    medida,
+    valor_medicion,
+    -- ajusta esto si tu formato no es YYYY-MM
+    to_date(time_code_raw || '-01', 'YYYY-MM-DD') as fecha_real,
+    extract(year from to_date(time_code_raw || '-01', 'YYYY-MM-DD')) as anio
+  from base
+),
+
+ranked as (
+  select
+    *,
+    row_number() over (
+      partition by codigo_isla, codigo_medida, anio
+      order by fecha_real desc
+    ) as rn
+  from con_fechas
 )
 
 select
-  to_date(time_code_raw || '-01-01', 'YYYY-MM-DD') as fecha_aproximada,
+  fecha_real as fecha_aproximada,
   codigo_isla,
   codigo_medida,
   medida,
   valor_medicion
-from base
+from ranked
+where rn = 1

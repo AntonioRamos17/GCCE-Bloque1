@@ -1,5 +1,5 @@
 
-  create view "ods_db"."schema.yml"."stg_carencia_bienes_vivienda__dbt_tmp"
+  create view "ods_db"."public"."stg_carencia_bienes_vivienda__dbt_tmp"
     
     
   as (
